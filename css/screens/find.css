@@ -1,0 +1,116 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+.find-icons i {
+  margin-bottom: 20px;
+}
+.find-icons span {
+  text-align: center;
+}
+.find-screen__text {
+  margin-top: 25px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.find-screen__recommended {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+.find-screen__subtext {
+  padding: 80px 100px;
+
+  color: rgba(0, 0, 0, 0.4);
+}
+.find-screen__footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.4);
+}
+.find-screen__footer-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.open-post__smimg {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-post__title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.open-post__subtitle {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+}
+.open-post__members .divider {
+  width: 2px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+}
+.open-post__membercount {
+  opacity: 0.7;
+}
+.open-post__column {
+  margin: 10px;
+}
+.open-post__members-status {
+  color: plum;
+}
+.open-post__photo img {
+  height: 90px;
+  width: 90px;
+  border-radius: 10px;
+}
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.open-post__photo {
+  position: relative;
+}
+
+@keyframes heartbeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(1.2);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count .fa-heart:hover {
+  animation: heartbeat 1.5s linear infinite;
+  will-change: transform;
+}
