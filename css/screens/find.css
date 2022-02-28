@@ -94,6 +94,9 @@
 .open-post__photo {
   position: relative;
 }
+.open-post__photo img {
+  object-fit: cover;
+}
 
 @keyframes heartbeat {
   0% {

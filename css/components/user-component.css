@@ -11,6 +11,7 @@
   height: 70px;
   border-radius: 25px;
   margin-right: 20px;
+  object-fit: cover;
 }
 .user-component__title {
   font-size: 22px;
